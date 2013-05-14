@@ -18,6 +18,7 @@
         // Initialize a mapbox map in element
         } else {
             var map = mapbox.map(this.attr('id'), a, b, c);
+          
             return map;
         }
 

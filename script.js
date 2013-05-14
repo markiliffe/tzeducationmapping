@@ -1,11 +1,8 @@
 var TileJSONs = [
     'http://a.tiles.mapbox.com/v3/examples.map-20v6611k,mapbox.dc-property-values.jsonp',
     'http://a.tiles.mapbox.com/v3/markiliffe.Necta_Secondary_Percentage_Change_2011_2012.jsonp',
-    'http://a.tiles.mapbox.com/v3/mapbox.dc-construction.jsonp',
-    'http://a.tiles.mapbox.com/v3/mapbox.dc-crime.jsonp',
-    'http://a.tiles.mapbox.com/v3/mapbox.dc-crime-robbery.jsonp',
-    'http://a.tiles.mapbox.com/v3/mapbox.dc-crime-theft.jsonp',
-    'http://a.tiles.mapbox.com/v3/mapbox.dc-crime-auto.jsonp'
+    'http://a.tiles.mapbox.com/v3/guyai.TZMAP.jsonp',
+
 ];
 
 $('#map').mapbox(TileJSONs, function(map, tiledata) {
@@ -13,22 +10,16 @@ $('#map').mapbox(TileJSONs, function(map, tiledata) {
     // Assign readable names to all layers
     map.getLayerAt(0).named('base');
     map.getLayerAt(1).named('secondary_change');
-    map.getLayerAt(2).named('construction');
-    map.getLayerAt(3).named('crime');
-    map.getLayerAt(4).named('robbery');
-    map.getLayerAt(5).named('theft');
-    map.getLayerAt(6).named('auto');
+    map.getLayerAt(2).named('primary_marks');
+
 
     // Don't composite base layer with other layers
     map.getLayer('base').composite(false);
 
     // Disable all overlay layers by default
     map.disableLayer('secondary_change');
-    map.disableLayer('construction');
-    map.disableLayer('crime');
-    map.disableLayer('robbery');
-    map.disableLayer('theft');
-    map.disableLayer('auto');
+    map.disableLayer('primary_marks');
+
 
     // Set initial latitude, longitude and zoom level
     map.setCenterZoom({
@@ -41,5 +32,12 @@ $('#map').mapbox(TileJSONs, function(map, tiledata) {
 
     // Enable share control
     mapbox.share().map(map).add();
+
+    //Enable tooltips?
+    map.gridControl.options.follow = true;
+
+    //Enable the legend
+    map.legendControl.addLegend(document.getElementById('my-legend').innerHTML);
+
 
 });
