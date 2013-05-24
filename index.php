@@ -32,7 +32,6 @@
           <input type="hidden" name="shule" />
             <input placeholder="Enter School Name or Number" type="text" autocomplete="off" name="tshule" onkeyup="bring()" >
             <input type="submit" />
-            
             <div id="geocode-error"></div>
             
           </form>
@@ -241,6 +240,6 @@
       </div>
     </div>
 
-    <script src="map_script.js"></script>
+    <script src="ext/js/map_script.js"></script>
   </body>
 </html>
