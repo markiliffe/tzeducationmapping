@@ -237,14 +237,14 @@ a.zoomer {
     top: auto;
     right: 10px;
     border: none;
-    color: white;
+    color: black;
     font-size: 11px;
-    width: 200px;
+    width: 230px;
     margin-left: -100px;
     line-height: 16px;
     margin-bottom: 20px;
     overflow: visible;
-    background-color:#fff;
+    background-color:#fff1cf;
 
     }
 
