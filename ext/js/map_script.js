@@ -4,7 +4,7 @@ var TileJSONs = [
     'http://a.tiles.mapbox.com/v3/markiliffe.Necta_Secondary_Percentage_Change_2011_2012.jsonp',
     'http://a.tiles.mapbox.com/v3/markiliffe.Schools.jsonp',
     'http://a.tiles.mapbox.com/v3/markiliffe.tzprimaryexamchange11-12.jsonp',
-    'http://a.tiles.mapbox.com/v3/guyai.TZMAP.jsonp',
+   // 'http://a.tiles.mapbox.com/v3/guyai.TZMAP.jsonp',
 
 ];
 
