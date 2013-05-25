@@ -42,12 +42,4 @@ $('#map').mapbox(TileJSONs, function(map, tiledata) {
 
     // Enable share control
     mapbox.share().map(map).add();
-
-    //Enable tooltips?
-    //map.gridControl.options.follow = true;
-
-    //Enable the legend
-    map.legendControl.addLegend(document.getElementById('my-legend').innerHTML);
-
-
 });
