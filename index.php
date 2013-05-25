@@ -217,20 +217,10 @@
       <div class="map-legends">
         <div class="map-legend" style="display: block; ">
           <div class="scale">
-           <label><a href="http://data.dc.gov/Main_DataCatalog.aspx?id=10">% Change '11-'12</a></label>
-            <div><img src="img/grid-scale-2.png" /></div>
-            <div><a>
-              <span style='background:#71727a;'></span>No Data
-              <span style='background:#FFFF00;'></span>0% to -10%
-              <span style='background:#FFAA00;'></span>-10% to -20%
-              <span style='background:#FF5500;'></span>-20% to -30%
-              <span style='background:#FF0000;'></span>-30% to -40%</a>
-            </div>
+            <div><img src="ext/img/grid-scale-2.png" width="100%"/></div>
           </div> 
           <div>
-            
-          <label><a>School</a></label>
-          </div> 
+        </div> 
         </div>
       </div>
     </div>
