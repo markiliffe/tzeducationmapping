@@ -47,7 +47,7 @@ $('#map').mapbox(TileJSONs, function(map, tiledata) {
     //map.gridControl.options.follow = true;
 
     //Enable the legend
-    //map.legendControl.addLegend(document.getElementById('my-legend').innerHTML);
+    map.legendControl.addLegend(document.getElementById('my-legend').innerHTML);
 
 
 });

@@ -244,6 +244,8 @@ a.zoomer {
     line-height: 16px;
     margin-bottom: 20px;
     overflow: visible;
+    background-color:#fff;
+
     }
 
 .map-tooltip .inner {
