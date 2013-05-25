@@ -150,9 +150,9 @@ body > div {
     color: white;
     }
 
-.layers#crime {top: 220px;}
+.layers#location {top: 220px;}
 
-#crime.layers a:hover, #crime.layers a:focus, #crime.layers a.active {
+#location.layers a:hover, #location.layers a:focus, #location.layers a.active {
     border-left: 5px solid #333;
     background: #e34f3f;
     color: white;

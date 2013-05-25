@@ -200,14 +200,14 @@
 
     <!-- Layer switcher -->
 
-     <div id="crime" class="layers" data-control="switcher">
+     <div id="location" class="layers" data-control="switcher">
       <a href="primary_locations" data-zoom="6">Primary School Locations</a>
-      <a href="primary_change" data-zoom="6">Primary Education Change, 2011 - 2012</a>
+      <a href="secondary_locations" data-zoom"6">Secondary School Locations</a>
       <!--<a href="#primary_marks" data-zoom="6">Primary Marks 2012</a>-->
     </div>
 
     <div id="projects" class="layers" data-control="switcher">
-      <a href="secondary_locations" data-zoom"6">Secondary School Locations</a>
+      <a href="primary_change" data-zoom="6">Primary Education Change, 2011 - 2012</a>
       <a href="#secondary_change" data-zoom="6">Secondary Education Change, 2011 - 2012</a>
     </div>
 
