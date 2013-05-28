@@ -29,8 +29,6 @@ $('#map').mapbox(TileJSONs, function(map, tiledata) {
     map.disableLayer('secondary_locations');
     map.disableLayer('secondary_change');
 
-
-
     // Set initial latitude, longitude and zoom level
     map.setCenterZoom({
         lat: -8.7737,
@@ -42,4 +40,6 @@ $('#map').mapbox(TileJSONs, function(map, tiledata) {
 
     // Enable share control
     mapbox.share().map(map).add();
+
+
 });
