@@ -1,6 +1,6 @@
 <?php require_once 'database_connection.php';
 
-/* This file queries the database, looking for both primary and secondary school results.
+/* This file queries the database 
  * 
  *
  *

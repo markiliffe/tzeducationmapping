@@ -25,7 +25,7 @@
       <div id='branding'></div>
       <div id="about">
         <h1>Examination Results in Tanzania</h1>
-        <p>As part of the Government of Tanzania's "Big Results Now"</p>
+        <!--<p>As part of the Government of Tanzania's "Big Results Now"</p>-->
         <!-- Geocoder -->
         <div data-control="geocode" id="search">
           <form name="schoolform" class="geocode">
@@ -218,7 +218,7 @@
       <div class="map-legends">
         <div class="map-legend" style="display: block; ">
           <div class="scale">
-            <div><img src="ext/img/grid-scale-2.png" width="100%"/></div>
+            <div><img src="ext/img/legend_exam_change.png" width="100%"/></div>
           </div> 
           <div>
         </div> 

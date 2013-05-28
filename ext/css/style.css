@@ -101,7 +101,7 @@ body > div {
 
 #branding {
 	position: absolute;
-    height: 145px;
+    height: 150px;
     width: 150px;
     left: 0;
     float: left;
@@ -110,7 +110,7 @@ body > div {
 
 #content {
 	position: absolute;
-    height: 220px;
+    height: 150px;
 	width: 100%;
 	bottom: 0px;
     background: rgb(255,255,255); /* old ie */
