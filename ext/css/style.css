@@ -297,9 +297,10 @@ a.zoomer {
 .map-legends {
     left: auto;
     right: 10px;
-    height: 125px;
+    height: 120px;
+    width: 600px;
     overflow-x: hidden;
-    bottom: 265px;
+    bottom: 175px;
     font-size: 11px;
 	font: .9em/1.5em 'OpenSans', sans-serif;
     }
@@ -308,17 +309,17 @@ a.zoomer {
     color: rgb(51, 51, 51);
     }
 
-.map-legends .map-legend {
-    width: 275px;
-    }
+/*.map-legends .map-legend {
+    width: 500px;
+    }*/ 
 
 .map-legends .scale img { 
     float: left; 
     }
 
-.map-legend {
+/*.map-legend {
     padding: 10px;
-    }
+    }*/
 
 .map-legend .scale {
     width: 100%;
