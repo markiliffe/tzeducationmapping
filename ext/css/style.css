@@ -110,7 +110,7 @@ body > div {
 
 #content {
 	position: absolute;
-    height: 250px;
+    height: 220px;
 	width: 100%;
 	bottom: 0px;
     background: rgb(255,255,255); /* old ie */
@@ -160,7 +160,7 @@ body > div {
     
 .layers a {
 	font: 1em/1.5em 'OswaldBook',  "Arial Narrow", sans-serif;
-    width: 113px;
+    width: 180px;
     float: left;
     margin-right: 20px;
     }
