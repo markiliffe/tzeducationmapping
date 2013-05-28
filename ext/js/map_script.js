@@ -1,3 +1,9 @@
+/**
+ * This JavaScript file loads the maps and creates certain controls (like sharing).
+ */
+
+
+// This array loads the various map sources from MapBox
 var TileJSONs = [
     'http://a.tiles.mapbox.com/v3/markiliffe.tz_education_blank.jsonp',
     'http://a.tiles.mapbox.com/v3/markiliffe.map-2yitmcy5.jsonp',
@@ -9,6 +15,10 @@ var TileJSONs = [
 
 ];
  
+/**
+ * This function names the maps by linking the position of the map in the TileJSONs[] to a 
+ * name. This name is then called in the index.php file to retrieve the map. 
+ */
 $('#map').mapbox(TileJSONs, function(map, tiledata) {
 
     // Assign readable names to all layers
