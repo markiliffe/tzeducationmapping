@@ -237,7 +237,7 @@ a.zoomer {
     -webkit-box-shadow:none;
     left: auto;
     top: auto;
-    right: 10px;
+    left: 10px;
     border: none;
     color: black;
     font-size: 11px;
