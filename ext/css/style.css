@@ -236,7 +236,7 @@ a.zoomer {
     -moz-box-shadow:none;
     -webkit-box-shadow:none;
     /*left: auto;*/
-    top: auto;
+    bottom: 100px;
     left: 10px;
     border: none;
     color: black;
