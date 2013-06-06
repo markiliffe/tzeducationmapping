@@ -236,13 +236,12 @@ a.zoomer {
     -moz-box-shadow:none;
     -webkit-box-shadow:none;
     left: auto;
-    bottom: 200px;
-    left: 10px;
+    bottom: auto;
     border: none;
     color: black;
     font-size: 11px;
     width: 300px;
-    margin-left: -100px;
+    margin-left: 10px;
     line-height: 16px;
     margin-bottom: 20px;
     overflow: visible;
