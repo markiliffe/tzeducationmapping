@@ -103,27 +103,29 @@ body > div {
 	position: absolute;
     height: 150px;
     width: 150px;
-    left: 0;
+    left: 50%;
     float: left;
     background: url(../img/necta_logo.gif) 30px 60px no-repeat;
     }
 
 #content {
 	position: absolute;
-    height: 150px;
-	width: 100%;
+    right:0px;
+    height: 100%;
+	width: 400px;
 	bottom: 0px;
     background: rgb(255,255,255); /* old ie */
     background: rgba(255,255,255,.9);
     border-bottom: 1px solid #ccc;
-    border-top: 5px solid #333;
+    border-top: 500px solid #333;
     overflow-y: hidden;
     z-index: 2;
     }
     
 #about {
-    margin-left: 150px;
-    width: 689px;
+    margin-top: 200px;
+    margin-left: 0;
+    width: 100%;
     float: left;
     padding: 0 20px;
     border-left: 1px solid #bbb;
@@ -295,7 +297,6 @@ a.zoomer {
     }
 
 .map-legends {
-    left: auto;
     right: 10px;
     height: 120px;
     width: 600px;
@@ -458,16 +459,45 @@ a.zoomer {
  * Start of imported CSS, this will need to be refactored 
  */
 
-@charset "utf-8";
-/* CSS Document */
 #fdata table, #fdata td{ font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px;
- border-collapse:collapse; border-color:#00CCCC; padding:5px; width:600px;}
- h4{ font-family:Arial, Helvetica, sans-serif;  border-color:#00CCCC; font-size:14px;}
- #dshule{ position:absolute; z-index: 1000; width:300px; border: 1px dotted #2da0ef;}
+    border-collapse:collapse; 
+    border-color:#00CCCC; 
+    padding:5px; 
+    width:100%;
+}
+ 
+
+ h4{ font-family:Arial, 
+    Helvetica, sans-serif;  
+    border-color:#00CCCC; 
+    font-size:14px;}
+
+
+ #dshule{ position:absolute; 
+    z-index: 1000; 
+    width:100%; border: 
+    1px dotted #2da0ef;
+}
+
  #dleta{ padding:1px; background: rgba(255, 255, 255, 0.999); border: 1px dotted #2da0ef; font-size:10px; }
- .cent{ width:450px; height:100%; border:none}
+ .cent{ width:100%; height:100%; border:none}
  .cent select{ text-decoration:none; border-color:none;}
- #sub {background:url(img/seach.jpg) no-repeat; border:none; height:20px; width:20px;}
- #content{ overflow:auto;}
-#geocode-error ,#about{ border: 1px solid #0F0;}
-#dfetch{margin-top: 20px;}
+ 
+ #sub {
+    background:url(img/seach.jpg) no-repeat; 
+    border:none; 
+    height:20px; 
+    width:20px;
+}
+
+ #content{ 
+    overflow:auto;
+}
+
+#geocode-error ,#about{ 
+    border: 1px solid #0F0;
+}
+
+#dfetch{
+    margin-top: 20px;
+}

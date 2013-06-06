@@ -24,7 +24,8 @@
 
       <div id='branding'></div>
       <div id="about">
-        <h1>Examination Results in Tanzania</h1>
+        <h1>Tanzanian Education Dashboard</h1>
+        <!--<h1>Examination Results in Tanzania</h1>-->
         <!--<p>As part of the Government of Tanzania's "Big Results Now"</p>-->
         <!-- Geocoder -->
         <div data-control="geocode" id="search">
@@ -204,13 +205,21 @@
     <div id="projects" class="layers" data-control="switcher">
       <a href="reset_map" data-zoom="6">Reset Map</a>
       <a href="primary_change" data-zoom="6">Primary Change, 2011 - 2012</a>
-      <a href="#secondary_change" data-zoom="6">Secondary Change, 2011 - 2012</a>
+      <a href="#secondary_change" data-zoom="6">Secondary Change, 2011 - 2012</a
+
+      <!-- Delete Here -->
+      <a href="secondary_locations" data-zoom"6">Primary Budget Spend</a>
+      <a href="secondary_locations" data-zoom"6">Secondary Budget Spend </a>
+
     </div>
 
 
      <div id="location" class="layers" data-control="switcher"> 
       <a href="primary_locations" data-zoom="6">Primary Locations</a>
       <a href="secondary_locations" data-zoom"6">Secondary Locations</a>
+      <!-- Delete Here -->
+      <a href="secondary_locations" data-zoom"6">University Locations</a>
+      
       <!--<a href="#primary_marks" data-zoom="6">Primary Marks 2012</a>-->
     </div>  
 
