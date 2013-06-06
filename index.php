@@ -86,7 +86,7 @@
       $c=explode(')',$cn[1]);
       	
       echo '<h4>School : '.strtoupper($cn[0]).' </h4>';
-      echo '<h4>Region : '.var_dump($rw).'</h4>';
+      echo '<h4>Region : '$rw['tbl_districts_id'];.'</h4>';
       echo '<h4>District :</h4>';
       echo '<BR /><b>Percent of Students passed 2011 and 2012</b> <BR /><BR />';
   }
@@ -103,7 +103,7 @@
     var barLabelPadding = 5; // padding between bar and bar labels (left)
     var gridLabelHeight = 18; // space reserved for gridline labels
     var gridChartOffset = 3; // space between start of grid and first bar
-    var maxBarWidth = 400; // width of the bar with the max value
+    var maxBarWidth = 420; // width of the bar with the max value
      
     // accessor functions 
     var barLabel = function(d) { return d['YEAR']; };
