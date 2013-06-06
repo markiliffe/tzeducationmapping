@@ -101,7 +101,7 @@
     var barLabelPadding = 5; // padding between bar and bar labels (left)
     var gridLabelHeight = 18; // space reserved for gridline labels
     var gridChartOffset = 3; // space between start of grid and first bar
-    var maxBarWidth = 420; // width of the bar with the max value
+    var maxBarWidth = 400; // width of the bar with the max value
      
     // accessor functions 
     var barLabel = function(d) { return d['YEAR']; };

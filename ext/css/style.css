@@ -505,10 +505,6 @@ a.zoomer {
     overflow:auto;
 }
 
-#chart{
-    width:400px;
-}
-
 #geocode-error ,#about{ 
 }
 
