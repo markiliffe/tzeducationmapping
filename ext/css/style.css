@@ -110,9 +110,9 @@ body > div {
 
 #content {
 	position: absolute;
-    right:0px;
+    right: 0;
     height: 100%;
-	width: 400px;
+	width: 550px;
 	bottom: 0px;
     background: rgb(255,255,255); /* old ie */
     background: rgba(255,255,255,.9);
@@ -297,7 +297,7 @@ a.zoomer {
     }
 
 .map-legends {
-    right: 10px;
+    right: 0;
     height: 120px;
     width: 600px;
     overflow-x: hidden;
@@ -479,9 +479,21 @@ a.zoomer {
     1px dotted #2da0ef;
 }
 
- #dleta{ padding:1px; background: rgba(255, 255, 255, 0.999); border: 1px dotted #2da0ef; font-size:10px; }
- .cent{ width:100%; height:100%; border:none}
- .cent select{ text-decoration:none; border-color:none;}
+ #dleta{ padding:1px; background: rgba(255, 255, 255, 0.999); 
+    border: 1px dotted #2da0ef; 
+    font-size:10px; 
+}
+
+ .cent{ 
+    width:100%; 
+    height:100%; 
+    border:none
+}
+
+ .cent select{ 
+    text-decoration:none; 
+    border-color:none;
+}
  
  #sub {
     background:url(img/seach.jpg) no-repeat; 
