@@ -459,7 +459,8 @@ a.zoomer {
  * Start of imported CSS, this will need to be refactored 
  */
 
-#fdata table, #fdata td{ font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px;
+#fdata table, #fdata td{
+    font-size:12px;
     border-collapse:collapse; 
     padding:5px; 
     width:200px;
@@ -502,6 +503,10 @@ a.zoomer {
 
  #content{ 
     overflow:auto;
+}
+
+#chart{
+    width:400px;
 }
 
 #geocode-error ,#about{ 
