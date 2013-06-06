@@ -101,10 +101,10 @@ body > div {
 
 #branding {
 	position: absolute;
-    height: 150px;
-    width: 150px;
-    left: 50%;
-    float: left;
+    height: 155px;
+    width: 155px;
+    left: 0; right:0;
+    margin: auto;
     background: url(../img/necta_logo.gif) 30px 60px no-repeat;
     }
 
@@ -461,7 +461,6 @@ a.zoomer {
 
 #fdata table, #fdata td{ font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px;
     border-collapse:collapse; 
-    border-color:#00CCCC; 
     padding:5px; 
     width:100%;
 }
@@ -469,18 +468,15 @@ a.zoomer {
 
  h4{ font-family:Arial, 
     Helvetica, sans-serif;  
-    border-color:#00CCCC; 
     font-size:14px;}
 
 
  #dshule{ position:absolute; 
     z-index: 1000; 
-    width:100%; border: 
-    1px dotted #2da0ef;
+    width:100%; 
 }
 
  #dleta{ padding:1px; background: rgba(255, 255, 255, 0.999); 
-    border: 1px dotted #2da0ef; 
     font-size:10px; 
 }
 
