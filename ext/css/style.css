@@ -297,11 +297,11 @@ a.zoomer {
     }
 
 .map-legends {
-    right: 0;
+    left: 10px;
+    bottom: 10px;
     height: 120px;
     width: 600px;
     overflow-x: hidden;
-    bottom: 175px;
     font-size: 11px;
 	font: .9em/1.5em 'OpenSans', sans-serif;
     }
