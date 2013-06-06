@@ -86,7 +86,7 @@
       $c=explode(')',$cn[1]);
       	
       echo '<h4>School : '.strtoupper($cn[0]).' </h4>';
-      echo '<h4>Region : '$rw['tbl_districts_id'];.'</h4>';
+      echo '<h4>Region : '.$rw['tbl_districts_id'].'</h4>';
       echo '<h4>District :</h4>';
       echo '<BR /><b>Percent of Students passed 2011 and 2012</b> <BR /><BR />';
   }
