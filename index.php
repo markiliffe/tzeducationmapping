@@ -113,10 +113,11 @@
       $data='Passed 2011,'.$one."\r\n".'Passed 2012,'.$two;
       $cn=explode('(',$_GET['tshule']);
       $c=explode(')',$cn[1]);
-      	
+      $myregion=is_array($region)?$region[1]:"";
+      $mydistrict=is_array($district)?$district[1]:"";
       echo '<h4>School : '.strtoupper($cn[0]).' </h4>';
-      echo '<h4>Region :'.is_array($region)?$region[1]:"".' </h4>';
-      echo '<h4>District:'.is_array($district)?$district[1]:"".'</h4>';
+      echo '<h4>Region :'.$myregion.' </h4>';
+      echo '<h4>District:'.$mydistrict.'</h4>';
       echo '<BR /><b>Percent of Students passed 2011 and 2012</b> <BR /><BR />';
   }
 
