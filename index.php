@@ -90,6 +90,28 @@
       echo '<h4>District :</h4>';
       echo '<BR /><b>Percent of Students passed 2011 and 2012</b> <BR /><BR />';
   }
+
+  function fetch_district($district_id){
+    $district_data="";
+    $q="select tbl_region_id,dist_name from tbl_districts where id='".$district_id."'";
+    $result=@mysql_query($q);
+    if(@mysql_num_rows($result)>0){
+      $dist=@mysql_fetch_array($result);
+      $district_data=array($dist['tbl_region_id'],$dist['dist_name']);
+    }
+    return $district_data;
+  }
+
+  function fetch_region($region_id){
+  $region_data="";
+    $q="select reg_no,reg_name from tbl_region where id='".$region_id."'";
+    $result=@mysql_query($q);
+    if(@mysql_num_rows($result)>0){
+      $reg=@mysql_fetch_array($result);
+      $region_data=array($reg'reg_no'],$reg['reg_name']);
+    }
+    return $region_data;  
+  }
 ?>
 <div id="chart"></div>
 
