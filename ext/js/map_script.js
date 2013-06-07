@@ -42,7 +42,7 @@ $('#map').mapbox(TileJSONs, function(map, tiledata) {
 
     // Set initial latitude, longitude and zoom level
     map.setCenterZoom({
-        lat: -8.7737,
+        lat: -6.7737,
         lon: 35.4199
     }, 6);
 
