@@ -48,6 +48,27 @@
  * It is a future objective of NECTA to refactor this file into a separate file. 
  *
  */
+ function fetch_district($district_id){
+    $district_data="";
+    $q="select tbl_region_id,dist_name from tbl_districts where id='".$district_id."'";
+    $result=@mysql_query($q);
+    if(@mysql_num_rows($result)>0){
+      $dist=@mysql_fetch_array($result);
+      $district_data=array($dist['tbl_region_id'],$dist['dist_name']);
+    }
+    return $district_data;
+  }
+
+  function fetch_region($region_id){
+  $region_data="";
+    $q="select reg_no,reg_name from tbl_region where id='".$region_id."'";
+    $result=@mysql_query($q);
+    if(@mysql_num_rows($result)>0){
+      $reg=@mysql_fetch_array($result);
+      $region_data=array($reg['reg_no'],$reg['reg_name']);
+    }
+    return $region_data;  
+  }
 	if(isset($_GET['shule']) && $_GET['shule']!='' )
 	{
     $data='';
@@ -81,10 +102,10 @@
            
         $av2011=$rw['2011_av_mark'];
         $av2012=$rw['2012_av_mark'];
-        //$district=fetch_district($rw['tbl_districts_id']);
+        $district=fetch_district($rw['tbl_districts_id']);
 
         if(is_array($district)){
-        //$region=fetch_region($district[0]);
+        $region=fetch_region($district[0]);
       }
 
       }
@@ -94,32 +115,12 @@
       $c=explode(')',$cn[1]);
       	
       echo '<h4>School : '.strtoupper($cn[0]).' </h4>';
-      echo '<h4>Region : </h4>';
-      echo '<h4>District:</h4>';
+      echo '<h4>Region :'.is_array($region)?$region[1]:"".' </h4>';
+      echo '<h4>District:'.is_array($district)?$district[1]:"".'</h4>';
       echo '<BR /><b>Percent of Students passed 2011 and 2012</b> <BR /><BR />';
   }
 
-  function fetch_district($district_id){
-    $district_data="";
-    $q="select tbl_region_id,dist_name from tbl_districts where id='".$district_id."'";
-    $result=@mysql_query($q);
-    if(@mysql_num_rows($result)>0){
-      $dist=@mysql_fetch_array($result);
-      $district_data=array($dist['tbl_region_id'],$dist['dist_name']);
-    }
-    return $district_data;
-  }
-
-  function fetch_region($region_id){
-  $region_data="";
-    $q="select reg_no,reg_name from tbl_region where id='".$region_id."'";
-    $result=@mysql_query($q);
-    if(@mysql_num_rows($result)>0){
-      $reg=@mysql_fetch_array($result);
-      $region_data=array($reg'reg_no'],$reg['reg_name']);
-    }
-    return $region_data;  
-  }
+  
 ?>
 <div id="chart"></div>
 
@@ -239,7 +240,7 @@
       <a href="primary_change" data-zoom="6">Primary Change, 2011 - 2012</a>
       <a href="#secondary_change" data-zoom="6">Secondary Change, 2011 - 2012</a
 
-      <!-- Delete Here -->
+      ><!-- Delete Here -->
       <a href="secondary_locations" data-zoom"6">Primary Budget Spend</a>
       <a href="secondary_locations" data-zoom"6">Secondary Budget Spend </a>
 
