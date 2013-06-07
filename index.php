@@ -58,6 +58,8 @@
     $shule=str_replace($sch,"''", $shule);
 
     if($shule!=''){
+      $region="";
+      $district="";
       $q="SELECT * FROM tbl_school_results WHERE id=$shule";
     	$qone=mysql_query($q);
       while($rw=mysql_fetch_array($qone))
@@ -79,6 +81,10 @@
            
         $av2011=$rw['2011_av_mark'];
         $av2012=$rw['2012_av_mark'];
+        $district=fetch_district($rw['tbl_districts_id']);
+        if(is_array($district)){
+        $region=fetch_region($district[0]);
+      }
       }
     
       $data='Passed 2011,'.$one."\r\n".'Passed 2012,'.$two;
@@ -86,8 +92,8 @@
       $c=explode(')',$cn[1]);
       	
       echo '<h4>School : '.strtoupper($cn[0]).' </h4>';
-      echo '<h4>Region : '. var_dump($rw['tbl_districts_id']).'</h4>';
-      echo '<h4>District :</h4>';
+      echo '<h4>Region : '. is_array($region)?$region[1]:"".'</h4>';
+      echo '<h4>District :'.is_array($district)?$district[1]:"".'</h4>';
       echo '<BR /><b>Percent of Students passed 2011 and 2012</b> <BR /><BR />';
   }
 
