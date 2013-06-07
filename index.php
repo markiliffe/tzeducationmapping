@@ -81,10 +81,12 @@
            
         $av2011=$rw['2011_av_mark'];
         $av2012=$rw['2012_av_mark'];
-        $district=fetch_district($rw['tbl_districts_id']);
+        //$district=fetch_district($rw['tbl_districts_id']);
+
         if(is_array($district)){
-        $region=fetch_region($district[0]);
+        //$region=fetch_region($district[0]);
       }
+
       }
     
       $data='Passed 2011,'.$one."\r\n".'Passed 2012,'.$two;
