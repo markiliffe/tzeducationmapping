@@ -39,16 +39,23 @@ function httpreq()
 function bring()
 {
 	mpunga=document.schoolform.tshule.value;
-	var ajx = httpreq();
+	/*var ajx = httpreq();
 	if(ajx==false)return false;
 	ajx.onreadystatechange = function()
 	{
 		if(ajx.readyState == 4){
 	   document.getElementById('dshule').innerHTML = ajx.responseText;
 		}
+	}*/
+	$.ajax({
+	type:"get",
+	url: "school_search.php?user_input="+mpunga,
+	success:function(response){
+	document.getElementById('dshule').innerHTML = response;	
 	}
-	ajx.open("GET", "school_search.php?user_input="+mpunga, true);	
-	ajx.send(null);
+	});
+	//ajx.open("GET", "school_search.php?user_input="+mpunga, true);	
+	//ajx.send(null);
 }
 
 /*
@@ -67,11 +74,13 @@ function bring()
  *
  */ 
 
-function weka(school_id,school_name)
+function weka(school_id,school_name,id,district)
 { 
 		document.schoolform.shule.value=school_id;
 		document.schoolform.tshule.value=school_name;
+		document.schoolform.dshule.value=district;
 		document.getElementById('dshule').innerHTML = '';
+		document.getElementById('dfetch').innerHTML = ''; 
 }
 
 /*
@@ -84,4 +93,5 @@ function weka(school_id,school_name)
 function ondoa()
 {
 	document.getElementById('dshule').innerHTML = '';
+	document.getElementById('dfetch').innerHTML = '';
 }
