@@ -84,18 +84,10 @@
 
   
 ?>
+<script id="csv" type="text/csv">YEAR,PERCENT PASSED
+<?php echo $data; ?>
+</script>
 <?php echo '<div id="chart"></div>' ; ?>
-<?php 
-$chartscript =<<<STARTSCRIPT
-
-  
-STARTSCRIPT;
-echo $chartscript;
-    ?>
-<?php echo '<script id="csv" type="text/csv">YEAR,PERCENT PASSED\n'.$data.'</script>'; ?>
-   
-  <?php echo "<script>renderChart();</script>"; ?>
-
 
 <table id="fdata">
    <tr><td>

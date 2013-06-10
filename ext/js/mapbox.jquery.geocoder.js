@@ -91,6 +91,7 @@ function getData(urls){
     url: urls,
     success:function(response){
     document.getElementById('dfetch').innerHTML = response; 
+    renderChart();
     }
     });
 }
