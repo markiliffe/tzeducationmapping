@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
     }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
     }
@@ -61,10 +61,10 @@ textarea {
 pre,
 code { font:normal 12px/20px monospace; }
 
-h1, h2, h3, h4, h5, h6 { 
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
     }
-    
+
 h1 {
     font-family: 'OswaldBook', "Arial Narrow", sans-serif;
     line-height: 1em;
@@ -121,7 +121,7 @@ body > div {
     overflow-y: hidden;
     z-index: 2;
     }
-    
+
 #about {
     margin-top: 200px;
     margin-left: 0;
@@ -137,7 +137,7 @@ body > div {
     left: 10px;
     top: 80px;
     }
-    
+
 .layers a {
     padding: 10px;
     margin: 1px 0;
@@ -145,7 +145,7 @@ body > div {
     background: white;
     color: #333;
     }
-    
+
 .layers a:hover, .layers a:focus, .layers a.active {
     border-left: 5px solid #333;
     background: #2da0ef;
@@ -159,7 +159,7 @@ body > div {
     background: #e34f3f;
     color: white;
     }
-    
+
 .layers a {
 	font: 1em/1.5em 'OswaldBook',  "Arial Narrow", sans-serif;
     width: 180px;
@@ -182,7 +182,7 @@ form.geocode input[type=text] {
     margin: 0;
     border: 1px solid  #ccc;
     }
-    
+
 form.geocode input[type=submit] {
     background: #2da0ef url(../img/search.png) no-repeat -0px -0px;
     text-indent: -9999px;
@@ -195,19 +195,19 @@ form.geocode input[type=submit] {
     float: left;
     cursor: pointer;
     }
-    
+
     form.geocode input[type=submit]:hover { background-color:#333; }
 	form.geocode input[type=submit]:active { background-color:#000; }
-	
+
 form.geocode.loading input[type=submit] {
-    background: url(img/ajax-loader.gif) no-repeat 50% 50%;
+   background: url(../img/ajax-loader.gif) no-repeat 50% 50%;
     border-color:#bbb;
-    background-color:#ddd;
+    /*background-color:#000000;*/
     box-shadow:inset rgba(0,0,0,0.1) 0px 1px 3px;
     -moz-box-shadow:inset rgba(0,0,0,0.1) 0px 1px 3px;
     -webkit-box-shadow:inset rgba(0,0,0,0.1) 0px 1px 3px;
     }
-    
+
 #geocode-error {
     display: none;
     float: left;
@@ -218,7 +218,7 @@ form.geocode.loading input[type=submit] {
     font-size: 1em;
     line-height: 0em;
     }
-    
+
 a.zoomer {
 	position: absolute;
     top: 10px;
@@ -261,11 +261,11 @@ a.zoomer {
     z-index: 2;
     text-transform: lowercase;
     }
-    
+
 .map-tooltip .inner:first-letter {
     text-transform: uppercase;
     }
-    
+
 .map-tooltip .desc2 { font-style: italic; }
 
 .map-tooltip .offense { font-weight: 700; }
@@ -305,17 +305,17 @@ a.zoomer {
     font-size: 11px;
 	font: .9em/1.5em 'OpenSans', sans-serif;
     }
-    
+
 .map-legends a {
     color: rgb(51, 51, 51);
     }
 
 /*.map-legends .map-legend {
     width: 500px;
-    }*/ 
+    }*/
 
-.map-legends .scale img { 
-    float: left; 
+.map-legends .scale img {
+    float: left;
     }
 
 /*.map-legend {
@@ -328,7 +328,7 @@ a.zoomer {
     }
 .map-legend > div {
     clear: both;
-    } 
+    }
 .map-legend .scale span {
     display: block;
     width: 30px;
@@ -370,7 +370,7 @@ a.zoomer {
     top: 45px;
     z-index: 2;
     }
-    
+
 .mmg-default {
     width: 20px;
     height: 40px;
@@ -378,7 +378,7 @@ a.zoomer {
     left: -10px;
     top: -30px;
     }
-    
+
 /* embed */
 
 .embed .map {
@@ -456,56 +456,56 @@ a.zoomer {
 @-o-keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
 
 /*
- * Start of imported CSS, this will need to be refactored 
+ * Start of imported CSS, this will need to be refactored
  */
 
 #fdata table, #fdata td{
     font-size:12px;
-    border-collapse:collapse; 
-    padding:5px; 
+    border-collapse:collapse;
+    padding:5px;
     width:235px;
 }
- 
 
- h4{ font-family:Arial, Helvetica, sans-serif;  
+
+ h4{ font-family:Arial, Helvetica, sans-serif;
     font-size:14px;
 }
 
- #dshule{ 
-    position:absolute; 
-    z-index: 1000; 
-    width:100%; 
+ #dshule{
+    position:absolute;
+    z-index: 1000;
+    width:100%;
 }
 
- #dleta{ 
-    padding:1px; 
-    background: rgba(255, 255, 255, 0.999); 
-    font-size:10px; 
+ #dleta{
+    padding:1px;
+    background: rgba(255, 255, 255, 0.999);
+    font-size:10px;
 }
 
- .cent{ 
-    width:100%; 
-    height:100%; 
+ .cent{
+    width:100%;
+    height:100%;
     border:none
 }
 
- .cent select{ 
-    text-decoration:none; 
+ .cent select{
+    text-decoration:none;
     border-color:none;
 }
- 
+
  #sub {
-    background:url(img/seach.jpg) no-repeat; 
-    border:none; 
-    height:20px; 
+    background:url(img/seach.jpg) no-repeat;
+    border:none;
+    height:20px;
     width:20px;
 }
 
- #content{ 
+ #content{
     overflow:auto;
 }
 
-#geocode-error ,#about{ 
+#geocode-error ,#about{
 }
 
 #dfetch{

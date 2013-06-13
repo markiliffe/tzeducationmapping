@@ -67,7 +67,7 @@ if($user_input!=''){
 						?>
                         <div id="dleta"><a href="#" onClick="weka(<?php echo $sec_school_data[$i]['school_id']; ?>,
                         '<?php echo $sec_school_data[$i]['school_name'].' ( '.$sec_school_data[$i]['school_no'].' ) '; ?>
-                        ','<?php echo $sec_school_data[$i]['school_id']; ?>')"><?php echo $sec_school_data[$i]['school_name']
+                        ','<?php echo $sec_school_data[$i]['school_id']; ?>','<?php echo $sec_school_data[$i]['ditrict_name'];  ?>')"><?php echo $sec_school_data[$i]['school_name']
 						.' ( '.$sec_school_data[$i]['school_no'].' )'; ?></a></div><?php
 					$i++;
 					
@@ -78,7 +78,7 @@ if($user_input!=''){
 						?>
                         <div id="dleta"><a href="#" onClick="weka(<?php echo $pr_school_data[$i]['school_id']; ?>,
                         '<?php echo $pr_school_data[$i]['school_name'].' ( '.$pr_school_data[$i]['school_no'].' ) '; ?>
-                        ','<?php echo $pr_school_data[$i]['school_id']; ?>')"><?php echo $pr_school_data[$i]['school_name']
+                        ','<?php echo $pr_school_data[$i]['school_id']; ?>','<?php echo $sec_school_data[$i]['ditrict_name'];  ?>')"><?php echo $pr_school_data[$i]['school_name']
 						.' ( '.$pr_school_data[$i]['school_no'].' )'; ?></a></div><?php
 					$i++;
 					}

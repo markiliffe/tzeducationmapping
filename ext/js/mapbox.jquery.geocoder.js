@@ -7,26 +7,27 @@
         e.preventDefault();
         var $this = $(this),
             map = $('#' + $this.parents('[data-map]').data('map')).data('map'),
-            query = encodeURIComponent($this.find('input[type=text]').val());
+            query = $this.find('input[type=text]').val();
+        var qr=query.split("(");
+        var shuleid=$this.find('input[type=hidden]').val();
+        var q=encodeURIComponent($this.find('input[type=button]').val());
+            //query="dar-es-salaam";
+           
+       getGeoCode(encodeURIComponent(qr[0].trim()),successes,$this);
 
-        $this.addClass('loading');
+      
 
-        reqwest({
-            url: 'http://open.mapquestapi.com/nominatim/v1/search?format=json&json_callback=callback&&limit=1&q=' + query,
-            type: 'jsonp',
-            jsonpCallback: 'callback',
-            jsonpCallbackName: 'callback',
-            success: success
-        });
-
-        function success(resp) {
+        function successes(resp) {
             resp = resp[0];
+         
             $this.removeClass('loading');
 
             if (!resp) {
+                 getGeoCode(q,successes,$this);
                 $this.find('#geocode-error').text('This address cannot be found.').fadeIn('fast');
                 console.log(resp);
-                return;
+              
+               // return;
             }
 
             $this.find('#geocode-error').hide();
@@ -50,13 +51,47 @@
                 'properties': {}
             });
 
+
             map.ui.refresh(); // Update attribution
         }
+     getData("school_fetcher.php?shule="+shuleid+"&tshule="+query);
+        
     }
 
-    
     $(function() {
         $('[data-control="geocode"] form').submit(geocode);
+      
     });
 
 }(window.jQuery);
+
+function getGeoCode(query,callfunc,$this){
+    $.ajax({
+           type: 'get',
+           dataType:"jsonp",
+            jsonpCallback: 'callback',
+            jsonpCallbackName: 'callback',
+            url: "http://open.mapquestapi.com/nominatim/v1/search?format=json&json_callback=callback&limit=1&countrycodes=TZ&q="+query,
+            beforeSend:function(){
+              //  alert("start sending");
+              $this.addClass('loading');
+            }, 
+            success:callfunc,
+            error:function(error){
+              
+                //alert("error occured"+error);
+            }
+        }); 
+}
+
+function getData(urls){
+    $.ajax({
+    dataType:"html",
+    type:"get",
+    url: urls,
+    success:function(response){
+    document.getElementById('dfetch').innerHTML = response; 
+    renderChart();
+    }
+    });
+}
