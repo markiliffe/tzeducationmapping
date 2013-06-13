@@ -16,6 +16,7 @@
     <script src="ext/js/mapbox.share.js"></script>
     <script src="ext/js/school_name_fetch.js"></script>
     <script src="ext/js/mapbox.jquery.geocoder.js"></script>
+    <script src="ext/js/legend_key.js"></script>
 
   </head>
 
@@ -124,7 +125,7 @@
       </div>
     </div>
 
-    <!-- Layer switcher -->
+   <!-- Layer switcher -->
 
 
     <div id="projects" class="layers" data-control="switcher">
@@ -132,16 +133,16 @@
       <a href="primary_change" data-zoom="6">Primary Change, 2011 - 2012</a>
       <a href="#secondary_change" data-zoom="6">Secondary Change, 2011 - 2012</a
 
-      ><!-- Delete Here -->
-      <a href="secondary_locations" data-zoom"6">Primary Budget Spend</a>
-      <a href="secondary_locations" data-zoom"6">Secondary Budget Spend </a>
+      <!-- Delete Here -->
+      <a href="secondary_locations" data-zoom"6" onclick=changeImage('ext/img/legend_exam_change_oneline.png')>Primary Budget Spend</a>
+      <a href="secondary_locations" data-zoom"6" onclick=changeImage('ext/img/legend_exam_change_oneline.png')>Secondary Budget Spend </a>
 
     </div>
 
 
      <div id="location" class="layers" data-control="switcher"> 
-      <a href="primary_locations" data-zoom="6">Primary Locations</a>
-      <a href="secondary_locations" data-zoom"6">Secondary Locations</a>
+      <a href="primary_locations" data-zoom="6" onclick=changeImage('ext/img/legend_exam_grading1.png')>Primary Locations</a>
+      <a href="secondary_locations" data-zoom"6" onclick=changeImage('ext/img/legend_exam_grading1.png')>Secondary Locations</a>
       <!-- Delete Here -->
       <a href="secondary_locations" data-zoom"6">University Locations</a>
       
@@ -152,8 +153,11 @@
       <div class="map-legends">
         <div class="map-legend" style="display: block; ">
           <div class="scale">
+            <div>
             <!-- Insert a javascript object which works out the current map when selected and display the right legend -->
-            <div><img src="ext/img/legend_exam_change_oneline.png" width="100%"/></div>
+                <div><img id="imgDisp" src="ext/img/legend_exam_change_oneline.png"  width="100%"/></div>
+            </div>
+            
           </div> 
           <div>
         </div> 
